@@ -1,0 +1,75 @@
+#header
+  background:
+    image: url(./../img/header-bg.jpg)
+    position: center
+    size: cover
+  padding: 20px 20px 150px
+  color: white
+
+.nav
+  // overflow: hidden -- to make the clearfixing...
+  overflow: hidden
+  &__logo
+    float: left
+    text-decoration: none
+    color: white
+  &__menu
+    float: right
+
+.logo
+  font-weight: 400
+  font-size: 1.2rem
+  letter-spacing: 1px
+  span
+    font-weight: 700
+
+.menu
+  &__item
+    color: white
+    text-decoration: none
+    margin-left: 30px
+    font-weight: 500
+
+.header
+  &__title, &__info
+    text-align: center
+    // letter-spacing: 1px
+  &__title
+    font-size: 3rem
+    padding: 0
+    margin: 5rem auto 1rem auto
+
+
+  &__info
+    max-width: 600px
+    margin: 0 auto
+    font-size: 1.2rem
+    line-height: 1.8
+    font-weight: 400
+
+.btn-list
+  text-align: center
+  margin-top: 2rem
+
+  .btn
+    margin: 0 20px
+
+.down-arrows
+  display: block
+  width: 24px
+  height: 24px
+  margin: 60px auto 0
+  opacity: .3
+  cursor: pointer
+  animation: up-down 3s infinite
+
+@keyframes up-down
+  0%
+    transform: translateY(-10px)
+  100%
+    transform: translateY(10px)
+@-webkit-keyframes up-down
+  0%
+    transform: translateY(-10px)
+  100%
+    transform: translateY(10px)
